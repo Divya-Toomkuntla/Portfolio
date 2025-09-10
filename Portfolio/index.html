@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Toomkuntla Divya — Portfolio</title>
+  <meta name="description" content="Portfolio of Toomkuntla Divya — Aspiring Data Scientist & Java Developer" />
+
+  <!-- Simple, modern CSS (single file) -->
+  <style>
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --muted:#6b7280; --accent:#0f172a;
+      --primary:#0ea5a4; --glass: rgba(255,255,255,0.6);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#ffffff 0%,var(--bg) 100%);
+      color:var(--accent);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      padding-bottom:60px;
+    }
+    .container{max-width:1000px;margin:28px auto;padding:20px;}
+    header{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between}
+    .name {font-size:1.6rem;font-weight:700}
+    .title {color:var(--muted);margin-top:6px;font-weight:600}
+    .contact {display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .btn{background:var(--primary);color:white;padding:9px 12px;border-radius:10px;text-decoration:none;font-weight:600;display:inline-flex;gap:8px;align-items:center}
+    .btn.secondary{background:transparent;color:var(--accent);border:1px solid #e6eef0}
+    .card{background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);padding:18px}
+    .grid{display:grid;gap:16px}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    .section-title{font-size:1.1rem;font-weight:700;margin-bottom:10px}
+    ul.skills{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+    ul.skills li{background:#f1f5f9;padding:6px 10px;border-radius:999px;font-size:0.9rem;color:var(--muted)}
+    .project{display:flex;flex-direction:column;gap:10px}
+    .project h4{margin:0;font-size:1rem}
+    .small{font-size:0.9rem;color:var(--muted)}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:0.9rem}
+    .meta{display:flex;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:0.92rem}
+    .project .badges{display:flex;gap:6px;flex-wrap:wrap}
+    .badge{background:#eef2f7;padding:6px 8px;border-radius:8px;font-size:0.85rem;color:var(--muted)}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    @media (max-width:820px){
+      .grid.cols-3{grid-template-columns:repeat(2,1fr)}
+      header{align-items:flex-start}
+    }
+    @media (max-width:520px){
+      .grid.cols-3{grid-template-columns:1fr}
+      header{gap:10px}
+      .contact{width:100%;justify-content:flex-start}
+    }
+    /* small utilities */
+    .muted{color:var(--muted)}
+    .spaced{margin-top:12px}
+    .row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <div>
+        <div class="name">Toomkuntla Divya</div>
+        <div class="title">Aspiring Data Scientist & Java Developer</div>
+        <div class="meta spaced">
+          <span>Suchitra, Medchal, India</span>
+          <span>•</span>
+          <span>CGPA: 7.52 (B.Tech CSE – Data Science)</span>
+        </div>
+      </div>
+
+      <div class="contact">
+        <a class="btn" href="mailto:toomkuntladivyareddy@gmail.com">Email</a>
+        <a class="btn secondary" href="https://github.com/Divya-Toomkuntla" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/divya-toomkuntla-689658318/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn secondary" id="downloadResume" href="resume.pdf" download>Resume (PDF)</a>
+      </div>
+    </header>
+
+    <!-- About / Summary -->
+    <section class="spaced card" aria-labelledby="about-heading">
+      <h3 id="about-heading" class="section-title">About</h3>
+      <p class="small">Aspiring Data Scientist and Software Engineer with strong foundations in Java, Python, and Data Science. Skilled in building predictive models, developing full-stack applications, and deploying AI solutions. Eager to apply technical expertise in solving business problems and driving data-driven decision-making.</p>
+      <div class="row spaced">
+        <div class="card" style="padding:12px;">
+          <div class="small" style="font-weight:700">Contact</div>
+          <div class="muted spaced">toomkuntladivyareddy@gmail.com • +91 7989694824</div>
+        </div>
+        <div class="card" style="padding:12px;">
+          <div class="small" style="font-weight:700">Looking for</div>
+          <div class="muted spaced">Internships / Entry-level roles in Data Science, Machine Learning, Java Development</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="spaced">
+      <div class="section-title">Skills</div>
+      <ul class="skills" aria-label="skills list">
+        <li>Java</li><li>Python</li><li>C</li><li>Data Structures & Algorithms</li><li>OOP</li><li>SQL / MySQL</li>
+        <li>Django</li><li>TensorFlow</li><li>Keras</li><li>OpenCV</li><li>scikit-learn</li><li>Matplotlib</li>
+        <li>Git & GitHub</li><li>Google Cloud</li><li>Generative AI</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section class="spaced">
+      <div class="section-title">Selected Projects</div>
+      <div class="grid cols-2">
+        <div class="card project">
+          <div>
+            <h4>Deep Learning Facial Expression Recognition — Scoring System</h4>
+            <div class="small muted">2024 • Python, Django, TensorFlow, Keras, OpenCV, HTML/CSS</div>
+          </div>
+          <p class="small">Developed a real-time facial expression recognition system using CNNs to score emotional states in restaurants. Built a UI allowing image uploads and returning emotional scores.</p>
+          <div class="project-content">
+            <div class="badges spaced">
+              <span class="badge">87% accuracy</span>
+              <span class="badge">+15% vs baseline</span>
+              <span class="badge">Real-time demo UI</span>
+            </div>
+            <ul class="spaced small">
+              <li>Used CNNs with Keras/TensorFlow and OpenCV for preprocessing.</li>
+              <li>Built a Django frontend for uploading images and showing scores.</li>
+            </ul>
+            <div class="row spaced">
+              <!-- If you have a GitHub link, paste here -->
+              <a class="btn secondary" href="https://github.com/Divya-Toomkuntla/Deep-Learning-Facial-Expression-Recognition-based-Scoring-System-for-Restaurants" target="_blank">Project Link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project">
+          <div>
+            <h4>Implementation of DNA Cryptography (Java)</h4>
+            <div class="small muted">2024 • Java, File I/O, Encryption</div>
+          </div>
+          <p class="small">Designed and implemented a bi-directional DNA-based encryption algorithm to secure cloud-stored data. Followed full SDLC from requirements to testing.</p>
+          <div class="badges spaced">
+            <span class="badge">95% encryption/decryption success</span>
+            <span class="badge">SDLC: design → tests</span>
+          </div>
+          <ul class="spaced small">
+            <li>Implemented custom codon mapping and substitution layers in Java.</li>
+            <li>Packaged as a CLI and library for file encryption experiments.</li>
+          </ul>
+          <div class="row spaced">
+            <a class="btn secondary" href="https://github.com/Divya-Toomkuntla/Implementation-of-DNA-Cryptography"target="_blank">Project Link</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Internships -->
+    <section class="spaced">
+      <div class="section-title">Internships & Simulations</div>
+      <div class="grid cols-2">
+        <div class="card">
+          <h4>CodSoft — Data Science Virtual Internship</h4>
+          <div class="small muted">Nov 2024 – Dec 2024</div>
+          <ul class="small spaced">
+            <li>Data preprocessing, model development, visualization with Pandas/NumPy/Matplotlib.</li>
+            <li>Developed and deployed ML models using scikit-learn and TensorFlow.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>YBI — Data Science & ML Virtual Internship</h4>
+          <div class="small muted">Oct 2024 – Nov 2024</div>
+          <ul class="small spaced">
+            <li>Worked on predictive models and analytics using Python/R and TensorFlow.</li>
+            <li>Performed feature engineering and produced visualizations.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>Deloitte Australia — Data Analytics (Forage)</h4>
+          <div class="small muted">Feb 2025</div>
+          <ul class="small spaced">
+            <li>Designed Tableau dashboards and analyzed datasets in Excel for insights.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Accenture North America — Data Analytics & Visualization (Forage)</h4>
+          <div class="small muted">Feb 2024</div>
+          <ul class="small spaced">
+            <li>Cleaned and modeled datasets, delivered insights via PPT and video presentation.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="spaced">
+      <div class="section-title">Education</div>
+      <div class="card small">
+        <strong>B.Tech in Computer Science & Engineering (Data Science)</strong><br>
+        Malla Reddy College of Engineering, Hyderabad — <span class="muted">2021 – 2025</span>
+        <div class="spaced small muted">CGPA: 7.52</div>
+      </div>
+
+      <div class="section-title spaced">Certifications</div>
+      <div class="card small">
+        <ul class="small spaced">
+          <li>NPTEL: Data Structures and Algorithms using Java</li>
+          <li>CodSoft: Data Science Internship Certificate</li>
+          <li>YBI: Data Science & Machine Learning Internship Certificate</li>
+          <li>Forage: Deloitte Data Analytics</li>
+          <li>Forage: Accenture Data Analytics & Visualization</li>
+          <li>HackerRank: Java Basics Skill Test</li>
+          <li>LetsUpgrade: Git & GitHub Bootcamp</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Links and CTA -->
+    <section class="spaced card">
+      <div class="section-title">Links</div>
+      <div class="row spaced">
+        <a class="btn secondary" href="https://github.com/Divya-Toomkuntla" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/divya-toomkuntla-689658318/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn" href="mailto:toomkuntladivyareddy@gmail.com">Contact Me</a>
+      </div>
+      <p class="small muted spaced">Tip: To add this to your resume, include the portfolio link next to your contact details (or add a small QR code pointing to the file).</p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Toomkuntla Divya — Built with HTML & CSS • Save this file and share the folder.
+    </footer>
+  </div>
+
+  <script>
+    // set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // small helpful alerts for placeholders
+    document.querySelectorAll('a[href="#"]').forEach(a => {
+      a.addEventListener('click', e => { e.preventDefault(); alert('To add the project link: edit index.html and replace the href="#" with your GitHub/demo URL or remove the button.'); });
+    });
+    // disable resume download button if file not present (best-effort)
+    (function(){
+      fetch('resume.pdf', {method:'HEAD'})
+        .then(res => {
+          if(!res.ok){
+            // file not found — change the label
+            document.getElementById('downloadResume').textContent = 'Add resume.pdf to enable download';
+            document.getElementById('downloadResume').classList.add('secondary');
+          }
+        }).catch(()=> {
+          // ignore - local file access sometimes blocked in some browsers
+        });
+    })();
+  </script>
+</body>
+</html>
